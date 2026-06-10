@@ -30,7 +30,7 @@ export default function ProductoCard({ producto, onAgregar }) {
         {sinStock ? <span className="badge bg-danger mb-3">Sin stock</span> : <span className="badge bg-success mb-3">Stock: {producto.stock}</span>}
 
         <div className="mt-auto d-flex gap-2">
-          <Link to={`/producto/${producto.id}`} className="btn btn-outline-light w-50">Detalle</Link>
+          <Link to={`/producto/${producto.id}`} className="btn btn-detalle w-50">Detalle</Link>
           <button className="btn-google w-50" disabled={sinStock} onClick={() => onAgregar(producto)}>Agregar</button>
         </div>
       </div>

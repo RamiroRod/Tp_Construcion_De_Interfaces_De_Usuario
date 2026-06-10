@@ -38,6 +38,9 @@ body { background: var(--bg-page); color: var(--text-primary); font-family: 'Seg
 .btn-google-outline { background: transparent; color: var(--g-blue) !important; border: 1px solid rgba(66,133,244,.45); }
 .btn-google-outline:hover { background: rgba(66,133,244,.1); border-color: var(--g-blue); }
 .btn-google.large { padding: 14px 44px; font-size: 1rem; }
+.btn-detalle {color: #616263;border: 1px solid #616263;background: transparent;}
+.btn-detalle:hover {color: #fff;background: #616263;border-color: #616263;}
+
 .theme-toggle { background: transparent; border: 1px solid var(--border-subtle); border-radius: 20px; padding: 5px 12px; cursor: pointer; color: var(--text-secondary); font-size: .82rem; display: flex; align-items: center; gap: 5px; }
 .theme-toggle:hover { border-color: var(--g-blue); color: var(--g-blue); }
 
