@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import { categorias, productos } from "../data/Productos";
+import SlideImage from "../components/SlideImage";
 
 const slides = [
   { id: 1, title: "Google Pixel 9 Pro", subtitle: "Cámara Pro, Gemini integrado y rendimiento premium para todos los días.", tag: "NUEVA GENERACIÓN", accent: "#4285F4", cta: "Ver smartphones", image:"/images/pixel9pro.png", fallback: "📱" },
@@ -48,21 +49,7 @@ export default function Inicio() {
                 {slides.map((_, i) => <button key={i} className="slide-dot" onClick={() => setActiveSlide(i)} aria-label={`Slide ${i + 1}`} style={{ width: i === activeSlide ? 32 : 8, background: i === activeSlide ? slide.accent : "#5f6368" }} />)}
               </div>
             </div>
-            <div className="col-lg-6 d-none d-lg-flex justify-content-center align-items-center">
-              <div className="slide-img-box" style={{ boxShadow: `0 0 80px ${slide.accent}33`, borderColor: `${slide.accent}44` }}>
-                {slide.image ? (
-                  <img
-                    src={slide.image}
-                    alt={slide.title}
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "100%",
-                      objectFit: "contain"}
-                      }/>
-                        ) : (
-                <span style={{ fontSize: "7rem" }}>{slide.fallback}</span>)}
-              </div>
-            </div>
+            <SlideImage slide={slide} />
           </div>
         </div>
         <button className="slider-arrow prev" onClick={prev} >‹</button>
