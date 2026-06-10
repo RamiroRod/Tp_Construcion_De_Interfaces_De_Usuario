@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // App.jsx
 import { ThemeProvider } from "./context/ThemeContext.jsx";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Inicio from "./pages/Inicio";
 import Tienda from "./pages/Tienda";
 import DetalleProducto from "./pages/DetalleProducto";
