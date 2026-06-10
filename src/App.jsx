@@ -9,7 +9,7 @@ import Tienda from "./pages/Tienda";
 import DetalleProducto from "./pages/DetalleProducto";
 import Carrito from "./pages/Carrito";
 import Contacto from "./pages/Contacto";
-import { productos as productosIniciales } from "./data/productos";
+import { productos as productosIniciales } from "./data/Productos";
 
 export default function App() {
   const [carrito, setCarrito] = useState(() => {
