@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ProductoCard from "../components/ProductoCard";
-import { categorias } from "../data/productos";
+import ProductoCard from "../components/ProductoCard";C
+import { categorias } from "../data/Productos";
 
 export default function Tienda({productos, onAgregar }) {
   const [busqueda, setBusqueda] = useState("");
