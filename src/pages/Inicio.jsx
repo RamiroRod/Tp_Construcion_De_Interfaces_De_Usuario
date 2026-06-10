@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
-import { categorias, productos } from "../data/productos";
+import { categorias, productos } from "../data/Productos";
 
 const slides = [
   { id: 1, title: "Google Pixel 9 Pro", subtitle: "Cámara Pro, Gemini integrado y rendimiento premium para todos los días.", tag: "NUEVA GENERACIÓN", accent: "#4285F4", cta: "Ver smartphones", image:"/images/pixel9pro.png", fallback: "📱" },

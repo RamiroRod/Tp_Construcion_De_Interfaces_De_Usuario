@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { productos, categorias } from "../data/productos";
+import { productos, categorias } from "../data/Productos";
 
 export default function DetalleProducto({ onAgregar }) {
   const { id } = useParams();
